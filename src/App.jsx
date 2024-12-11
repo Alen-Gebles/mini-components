@@ -1,13 +1,12 @@
 
 import './App.css'
-import FetchAPI from './components/fetchAPI/fetchAPI'
+import TeamsProject from './components/TeamsProject/data'
 
 function App() {
 
   return (
     <section className='component-holder'>
-      <FetchAPI />
-
+      <TeamsProject />
     </section>
   )
 }
