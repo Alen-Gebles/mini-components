@@ -1,0 +1,45 @@
+.fetchAPI-container{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.gitEvents{
+  padding: 5px;
+}
+
+.eventBox{
+  display: flex;
+  width: 100%;
+  height: fit-content;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed rgb(224, 224, 224);
+  font-family: 'Inconsolata';
+  font-weight: 700;
+}
+.gitEvents .eventBox:last-child{
+  border: none;
+}
+.gitActionRow_left{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.gitActionRow_left p{
+  margin: 0;
+  font-size: 20px;
+  color: rgb(111, 111, 111);
+}
+.gitPushIcon path{
+  fill: rgb(12, 141, 31);
+}
+.gitPushIcon{
+  width: 18px;
+  height: 18px;
+}
+.gitActionRow_rigth p{
+  color: rgb(16, 119, 255);
+  font-size: 18px;
+}
