@@ -49,17 +49,21 @@ function TeamsProject() {
   return (
     <section className='teamsProject-container'>
 
-      <div className='fixedBox mini-container'>
+      <div className='mini-container tmBox'>
 
-        {renderTabContent()}
+        <div className='fixedBox'>
 
-        <div className='tabsMenu'>
-          {tabs.map(( tab ) => (
-            <div key={tab.name} className={`tabBtn ${activeTab === tab.name ? 'tabBtnActiveBg' : ''}`} onClick={() => setActiveTab(tab.name)}>
-              { tab.svg }
-              <button>{ tab.name }</button>
-            </div>
-          ))}
+          {renderTabContent()}
+
+          <div className='tabsMenu'>
+            {tabs.map(( tab ) => (
+              <div key={tab.name} className={`tabBtn ${activeTab === tab.name ? 'tabBtnActiveBg' : ''}`} onClick={() => setActiveTab(tab.name)}>
+                { tab.svg }
+                <button>{ tab.name }</button>
+              </div>
+            ))}
+          </div>
+
         </div>
 
       </div>

@@ -1,3 +1,10 @@
+.miniRow{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .teamMiniRow_left{
   display: flex;
   align-items: center;
@@ -20,4 +27,43 @@
 
 .miniTeamTabBox .miniRow:last-child{
   border: 0;
+}
+
+.teamMiniRow_right{
+  position: relative;
+}
+
+.teamMiniRow_right p{
+  cursor: pointer;
+}
+
+.timezoneHover{
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 6px 3px 3px;
+  background-color: #121212;
+  border-radius: 8px;
+  position: absolute;
+  right: -3px;
+  top: -25px;
+  font-size: 14px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.334), inset 1px 1px 2px rgb(48, 48, 48);
+  pointer-events: none;
+  transition: 100ms;
+  color: white;
+}
+
+.timezoneHover p:nth-child(1){
+  background-color: whitesmoke;
+  color: #121212;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.timezoneHover p:nth-child(2){
+  margin: 0;
 }

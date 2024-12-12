@@ -2,12 +2,20 @@
 
 :root{
     interpolate-size: allow-keywords;
+    --white:#fefefe;
+    --slightly-white:#f7f8fa;
+    --border-clr:#e4e4e4;
+    --font-clr:#292929;
 }
 
 body{
-  background-color: #121212;
+  position: relative;
+  background-color: #f6f7f6;
   overflow: hidden;
   font-family: 'Roboto';
   position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
