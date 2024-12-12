@@ -1,9 +1,9 @@
 import React from 'react'
 import './githubMini.css'
 
-export default function GithubMini() {
+export default function GithubMini({ activeTab }) {
   return (
-    <div className='miniTabBox miniGitTabBox'>
+    <div className={`miniTabBox miniGitTabBox ${activeTab === 'Github' ? 'tabBtnActive' : 'tabBtnNotActive'}`}>
 
       <div className='gitMiniRow miniRow'>
         <div className='gitMiniRow_left'>

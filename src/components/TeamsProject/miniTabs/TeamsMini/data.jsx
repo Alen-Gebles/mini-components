@@ -1,9 +1,9 @@
 import React from 'react'
 import './teamsMini.css'
 
-export default function TeamsMini() {
+export default function TeamsMini({ activeTab }) {
   return (
-    <div className='miniTabBox miniTeamTabBox'>
+    <div className={`miniTabBox miniTeamTabBox ${activeTab === 'Teams' ? 'tabBtnActive' : 'tabBtnNotActive'}`}>
 
       <div className='miniRow'>
         <div className='teamMiniRow_left'>

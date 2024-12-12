@@ -16,8 +16,6 @@
   position: absolute;
   bottom: 0;
   padding: 10px;
-  color: black;
-  transition: 2s;
 }
 
 .mini-container{
@@ -26,25 +24,30 @@
   box-shadow: 0px 0px 15px rgb(128, 128, 128);
   border-radius: 15px;
   color: black;
-  transition: 2s;
+  transition: 1s ease-in !important;
 }
 
 .tabsMenu{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .tabBtn{
   display: flex;
   align-items: center;
-  padding: 5px 10px;
+  padding: 5px 7px;
   border-radius: 7px;
   cursor: pointer;
   transition: 100ms;
 }
 
 .tabBtn:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.tabBtnActiveBg{
   background-color: rgb(226, 226, 226);
 }
 
@@ -61,3 +64,21 @@
   width: 17px;
   cursor: pointer;
 }
+
+/*////////////////////*/
+
+.tabBtnActive{
+  animation: activeTab 150ms ease-in forwards;
+}
+
+@keyframes activeTab {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+/*////////////////////*/

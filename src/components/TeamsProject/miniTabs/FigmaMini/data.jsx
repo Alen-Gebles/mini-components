@@ -1,8 +1,8 @@
 import React from 'react'
 import './figmaMini.css'
 
-export default function FigmaMini() {
+export default function FigmaMini({ activeTab }) {
   return (
-    <div className='miniTabBox'>FigmaMini</div>
+    <div className={`miniTabBox ${activeTab === 'Figma' ? 'tabBtnActive' : 'tabBtnNotActive'}`}>FigmaMini</div>
   )
 }
