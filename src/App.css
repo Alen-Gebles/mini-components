@@ -8,3 +8,14 @@
   flex-wrap: wrap;
   gap: 20px;
 }
+
+.footerP{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(176, 175, 175);
+  user-select: none;
+}
