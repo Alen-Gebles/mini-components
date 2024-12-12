@@ -1,0 +1,23 @@
+.teamMiniRow_left{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.teamMiniRow_left p,
+.teamMiniRow_right p{
+  margin: 0;
+  font-weight: 500;
+}
+
+.teamMiniRow_left p:nth-child(2){
+  color: rgb(123, 127, 131);
+}
+
+.miniTeamTabBox .miniRow{
+  padding-block: 10px;
+}
+
+.miniTeamTabBox .miniRow:last-child{
+  border: 0;
+}

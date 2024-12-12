@@ -1,0 +1,57 @@
+.miniRow{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgb(197, 197, 197);
+  padding-block: 6px;
+}
+
+.gitMiniRow:last-child{
+  border-bottom: none !important;
+}
+
+.gitMiniRow_left,
+.gitMiniRow_right{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gitMiniRow_left p,
+.gitMiniRow_right p{
+  margin: 0;
+  font-weight: 500;
+}
+
+.gitMiniRow_right p{
+  color: rgb(10, 104, 192);
+}
+
+.gitMiniRow_left p{
+  color: rgb(123, 127, 131);
+  font-size: 16px;
+}
+
+.gitMiniRow_left svg{
+  width: 18px;
+  height: 18px;
+  transform: translateY(-1px);
+}
+
+.gitMiniRow_left svg path{
+  fill: rgb(29, 145, 16);
+}
+
+.gitMiniRow:nth-child(3) .gitMiniRow_left svg path{
+  fill: rgb(173, 25, 236);
+}
+
+.gitMiniRow_right svg{
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.gitMiniRow_right svg path{
+  stroke: rgb(123, 127, 131);
+}
